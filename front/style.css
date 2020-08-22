@@ -1,0 +1,13 @@
+#addEndeavorForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+button.selected {
+  background-color: #555;
+}
+
+[hidden] {
+  display: none !important;
+}
