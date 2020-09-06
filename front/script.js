@@ -5,6 +5,8 @@ var endeavors = [
   }
 ];
 
+const addEndeavorModal = new Modal("front/modals/addEndeavor.html");
+
 function selectByButton(event) {
   event.preventDefault();
   if (event.target === event.currentTarget) {

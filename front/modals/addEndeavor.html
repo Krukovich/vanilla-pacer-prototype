@@ -1,0 +1,45 @@
+<!-- FORM endeavors -->
+<style>
+  #addEndeavorForm {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+</style>
+
+<form id="addEndeavorForm" data-top="80" data-left="140" data-width="400" data-height="380">
+  <select multiple name="cats" hidden>
+    <option value="желание">желание</option>
+    <option value="цель">цель</option>
+    <option value="задача">задача</option>
+    <option value="знание/навык">знание/навык</option>
+    <option value="мечта">мечта</option>
+    <option value="полезная привычка">полезная привычка</option>
+    <option value="вредная привычка">вредная привычка</option>
+    <option value="проблема">проблема</option>
+    <option value="гирька">гирька</option>
+  </select>
+  <label>Чего ты хочешь достигнуть? Какой результат желаешь получить?</label>
+  <input name="name" type="text">
+  <label>Чем является это стремление для тебя?</label>
+  <div class="buttons" onclick="selectByButton(event)">
+    <button>желание</button>
+    <button>цель</button>
+    <button>задача</button>
+    <button>знание/навык</button>
+    <button>мечта</button>
+    <button>полезная привычка</button>
+    <button>вредная привычка</button>
+    <button>проблема</button>
+    <button>гирька</button>
+  </div>
+  <button onclick="saveEndeavor()">
+    Запомнить стремление
+  </button>
+</form>
+
+
+
+<script src="../Modal.js"></script>

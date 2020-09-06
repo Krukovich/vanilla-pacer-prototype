@@ -9,50 +9,21 @@
 
   <link rel="stylesheet" href="front/style.css">
 
+  <script src="front/Modal.js"></script>
   <script src="front/c4console.js"></script>
   <script src="front/front-fs.js"></script>
   <script src="front/GlobalVault.js"></script>
   <script src="front/GVdefault-to-fs.js"></script>
   <script src="front/script.js" defer></script>
+
 </head>
 
 <body>
 
   <main>
 
-    <button onclick="addEndeavorForm.hidden = !addEndeavorForm.hidden" class="">Добавить стремление</button>
+    <button onclick="addEndeavorModal.show()" class="">Добавить стремление</button>
 
-    <!-- FORM endeavors -->
-    <form id="addEndeavorForm" hidden>
-      <select multiple name="cats" hidden>
-        <option value="желание">желание</option>
-        <option value="цель">цель</option>
-        <option value="задача">задача</option>
-        <option value="знание/навык">знание/навык</option>
-        <option value="мечта">мечта</option>
-        <option value="полезная привычка">полезная привычка</option>
-        <option value="вредная привычка">вредная привычка</option>
-        <option value="проблема">проблема</option>
-        <option value="гирька">гирька</option>
-      </select>
-      <label>Чего ты хочешь достигнуть? Какой результат желаешь получить?</label>
-      <input name="name" type="text">
-      <label>Чем является это стремление для тебя?</label>
-      <div class="buttons" onclick="selectByButton(event)">
-        <button>желание</button>
-        <button>цель</button>
-        <button>задача</button>
-        <button>знание/навык</button>
-        <button>мечта</button>
-        <button>полезная привычка</button>
-        <button>вредная привычка</button>
-        <button>проблема</button>
-        <button>гирька</button>
-      </div>
-      <button onclick="saveEndeavor()">
-        Запомнить стремление
-      </button>
-    </form>
   </main>
 </body>
 
