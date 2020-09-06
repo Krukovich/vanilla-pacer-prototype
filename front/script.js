@@ -5,7 +5,10 @@ var endeavors = [
   }
 ];
 
+const endeavorsVault = new GlobalVault('endeavors');
+
 const addEndeavorModal = new Modal("front/modals/addEndeavor.html");
+
 
 function selectByButton(event) {
   event.preventDefault();
@@ -26,5 +29,5 @@ function saveEndeavor() {
     .map(([_, index]) => index)
     .join('');
   endeavors.push({name: addEndeavorForm.name.value, cats});
-  console.log(endeavors);
+  endeavorsVault.save();  
 }
